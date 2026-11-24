@@ -1,0 +1,16 @@
+$ XSS probe against the code-based solution (manual check, not part of the committed suite)
+
+ RUN  v2.1.9 /home/claude/p13
+
+stdout | src/__xss.probe.tsx > XSS probe > the payload is echoed as data and escaped on output
+reasonCode : MALFORMED_INPUT
+message    : Invalid input: start time must be in HH:MM 24-hour format (received "<img src=x onerror=alert(1)>").
+rendered   : <p class="banner__message">Invalid input: start time must be in HH:MM 24-hour format (received &quot;&lt;img src=x onerror=alert(1)&gt;&quot;).</p>
+
+ ✓ src/__xss.probe.tsx (1 test) 8ms
+
+ Test Files  1 passed (1)
+      Tests  1 passed (1)
+   Start at  17:49:14
+   Duration  442ms (transform 157ms, setup 0ms, collect 191ms, tests 8ms, environment 0ms, prepare 75ms)
+

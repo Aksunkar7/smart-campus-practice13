@@ -1,0 +1,29 @@
+{
+  "name": "smart-campus-practice13",
+  "private": true,
+  "version": "13.0.0",
+  "type": "module",
+  "description": "Practice #13 - code-based vs low-code Smart Campus Room Availability Checker",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:shared": "vitest run src/lib/shared.contract.test.ts",
+    "test:parity": "vitest run low-code/appsmith/lowcode.parity.test.js",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "typescript": "~5.6.3",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.9"
+  }
+}

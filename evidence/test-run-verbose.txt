@@ -1,0 +1,34 @@
+$ npx vitest run --reporter=verbose
+
+ RUN  v2.1.9 /home/claude/p13
+
+ ✓ low-code/appsmith/lowcode.parity.test.js > Low-code rule object - shared contract T1-T7 > T1: valid free interval -> Available
+ ✓ low-code/appsmith/lowcode.parity.test.js > Low-code rule object - shared contract T1-T7 > T2: overlap with an existing booking -> Unavailable
+ ✓ low-code/appsmith/lowcode.parity.test.js > Low-code rule object - shared contract T1-T7 > T3: blocked room -> Unavailable
+ ✓ low-code/appsmith/lowcode.parity.test.js > Low-code rule object - shared contract T1-T7 > T4: duration = 0 -> validation error
+ ✓ low-code/appsmith/lowcode.parity.test.js > Low-code rule object - shared contract T1-T7 > T5: duration = 121 minutes -> validation error
+ ✓ low-code/appsmith/lowcode.parity.test.js > Low-code rule object - shared contract T1-T7 > T6: past start time -> validation error
+ ✓ low-code/appsmith/lowcode.parity.test.js > Low-code rule object - shared contract T1-T7 > T7: adjacent non-overlapping interval -> Available
+ ✓ low-code/appsmith/lowcode.parity.test.js > Low-code rule object - AC5 > T8: booking data unchanged after checks
+ ✓ low-code/appsmith/lowcode.parity.test.js > Equivalence - the two solutions answer identically > T1: code-based output === low-code output
+ ✓ low-code/appsmith/lowcode.parity.test.js > Equivalence - the two solutions answer identically > T2: code-based output === low-code output
+ ✓ low-code/appsmith/lowcode.parity.test.js > Equivalence - the two solutions answer identically > T3: code-based output === low-code output
+ ✓ low-code/appsmith/lowcode.parity.test.js > Equivalence - the two solutions answer identically > T4: code-based output === low-code output
+ ✓ low-code/appsmith/lowcode.parity.test.js > Equivalence - the two solutions answer identically > T5: code-based output === low-code output
+ ✓ low-code/appsmith/lowcode.parity.test.js > Equivalence - the two solutions answer identically > T6: code-based output === low-code output
+ ✓ low-code/appsmith/lowcode.parity.test.js > Equivalence - the two solutions answer identically > T7: code-based output === low-code output
+ ✓ src/lib/shared.contract.test.ts > Code-based solution - shared contract T1-T7 > T1: valid free interval -> Available
+ ✓ src/lib/shared.contract.test.ts > Code-based solution - shared contract T1-T7 > T2: overlap with an existing booking -> Unavailable
+ ✓ src/lib/shared.contract.test.ts > Code-based solution - shared contract T1-T7 > T3: blocked room -> Unavailable
+ ✓ src/lib/shared.contract.test.ts > Code-based solution - shared contract T1-T7 > T4: duration = 0 -> validation error
+ ✓ src/lib/shared.contract.test.ts > Code-based solution - shared contract T1-T7 > T5: duration = 121 minutes -> validation error
+ ✓ src/lib/shared.contract.test.ts > Code-based solution - shared contract T1-T7 > T6: past start time -> validation error
+ ✓ src/lib/shared.contract.test.ts > Code-based solution - shared contract T1-T7 > T7: adjacent non-overlapping interval -> Available
+ ✓ src/lib/shared.contract.test.ts > Code-based solution - AC5 > T8: booking data unchanged after checks
+ ✓ src/lib/shared.contract.test.ts > Code-based solution - AC5 > T8b: the snapshot handed to the rules is frozen, so a write throws
+
+ Test Files  2 passed (2)
+      Tests  24 passed (24)
+   Start at  13:21:04
+   Duration  488ms (transform 93ms, setup 0ms, collect 108ms, tests 13ms, environment 0ms, prepare 100ms)
+

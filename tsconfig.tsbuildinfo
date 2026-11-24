@@ -1,0 +1,1 @@
+{"root":["./src/App.tsx","./src/main.tsx","./src/components/CheckerForm.tsx","./src/components/ResultBanner.tsx","./src/components/RoomInfo.tsx","./src/data/samples.ts","./src/lib/availability.ts","./src/lib/bookingRules.ts","./src/lib/shared.contract.test.ts","./src/lib/time.ts","./src/lib/validation.ts"],"version":"5.6.3"}

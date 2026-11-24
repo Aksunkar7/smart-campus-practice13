@@ -1,0 +1,47 @@
+$ analysis of the Appsmith application export
+
+file                 : Smart Campus Room Checker (low-code).json
+size                 : 75,565 bytes
+artifactJsonType     : APPLICATION
+schema versions      : client 2.0 / server 13.0
+isPublic             : True
+datasourceList       : []   (no data source configured)
+customJSLibList      : []   (no third-party JS library)
+
+widgets (10):
+  Title            TEXT_WIDGET
+  Subtitle         TEXT_WIDGET
+  StartTime        INPUT_WIDGET_V2
+  Duration         INPUT_WIDGET_V2
+  BlockedSwitch    SWITCH_WIDGET
+  CheckBtn         BUTTON_WIDGET
+  Verdict          TEXT_WIDGET
+  Message          TEXT_WIDGET
+  ReasonMeta       TEXT_WIDGET
+  BookingsTable    TABLE_WIDGET_V2
+
+JS functions stored as separate entities in actionList:
+  Rules.label
+  Rules.overlaps
+  Rules.parse
+  Rules.decide
+  Rules.message
+  Rules.check
+  Rules.bookingRows
+
+platform rewrote the pasted source:
+  "this." in the pasted collection body : 31
+  "this." in the stored functions       : 0
+  "Rules." in the stored functions      : 31
+  ES6 method shorthand was expanded to  : function (...) { ... }
+
+publishedPage identical to unpublishedPage: True  (the layout is stored twice)
+gitSyncId present on all 7 action entities: True
+
+markup search (is this a runnable app?):
+  contains '<html'     : False
+  contains '<div'      : False
+  contains '<style'    : False
+  contains '<script'   : False
+  contains '.css'      : False
+  -> no markup, no stylesheet, no bundle. The file describes an app; it is not one.

@@ -1,0 +1,12 @@
+$ npx vitest run
+
+ RUN  v2.1.9 /home/claude/p13
+
+ ✓ low-code/appsmith/lowcode.parity.test.js (15 tests) 32ms
+ ✓ src/lib/shared.contract.test.ts (9 tests) 7ms
+
+ Test Files  2 passed (2)
+      Tests  24 passed (24)
+   Start at  13:21:03
+   Duration  559ms (transform 106ms, setup 0ms, collect 118ms, tests 39ms, environment 0ms, prepare 119ms)
+
